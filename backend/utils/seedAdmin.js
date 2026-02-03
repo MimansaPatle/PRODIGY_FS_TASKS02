@@ -16,16 +16,18 @@ const seedAdmin = async () => {
     }
     
     // Create default admin
+    const defaultPassword = process.env.DEFAULT_ADMIN_PASSWORD || 'admin123';
+    
     const admin = new User({
       username: 'admin',
-      password: 'admin123',
+      password: defaultPassword,
       role: 'admin'
     });
     
     await admin.save();
     console.log('✅ Default admin created successfully');
     console.log('📧 Username: admin');
-    console.log('🔑 Password: admin123');
+    console.log('🔑 Password: [HIDDEN FOR SECURITY]');
     console.log('⚠️  Please change the default password after first login');
     
     process.exit(0);

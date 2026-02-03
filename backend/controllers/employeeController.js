@@ -173,10 +173,13 @@ const updateEmployee = async (req, res) => {
     const employeeId = req.params.id;
     const updateData = req.body;
 
-    console.log('Update employee request:', {
-      employeeId,
-      updateData: JSON.stringify(updateData, null, 2)
-    });
+    // Log update request in development only
+    if (process.env.NODE_ENV === 'development') {
+      console.log('Update employee request:', {
+        employeeId,
+        updateData: JSON.stringify(updateData, null, 2)
+      });
+    }
 
     // Check if employee exists
     const employee = await Employee.findById(employeeId);
@@ -237,7 +240,9 @@ const updateEmployee = async (req, res) => {
         message: err.message
       }));
 
-      console.log('Validation errors:', errors);
+      if (process.env.NODE_ENV === 'development') {
+        console.log('Validation errors:', errors);
+      }
 
       return res.status(400).json({
         success: false,

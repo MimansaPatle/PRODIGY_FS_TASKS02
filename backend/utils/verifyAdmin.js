@@ -18,13 +18,14 @@ const verifyAdmin = async () => {
     
     console.log('✅ Admin user verified');
     console.log('📧 Username: admin');
-    console.log('🔑 Password: admin123');
+    console.log('🔑 Password: [HIDDEN FOR SECURITY]');
     console.log(`👤 Role: ${admin.role}`);
     console.log(`🟢 Status: ${admin.isActive ? 'Active' : 'Inactive'}`);
     console.log(`📅 Created: ${admin.createdAt}`);
     
-    // Test password verification
-    const isPasswordValid = await admin.matchPassword('admin123');
+    // Test password verification (using default password)
+    const defaultPassword = process.env.DEFAULT_ADMIN_PASSWORD || 'admin123';
+    const isPasswordValid = await admin.matchPassword(defaultPassword);
     console.log(`🔐 Password Test: ${isPasswordValid ? '✅ Valid' : '❌ Invalid'}`);
     
     process.exit(0);

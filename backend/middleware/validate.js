@@ -14,7 +14,7 @@ const handleValidationErrors = (req, res, next) => {
     console.log('Validation middleware errors:', {
       url: req.url,
       method: req.method,
-      body: JSON.stringify(req.body, null, 2),
+      body: process.env.NODE_ENV === 'development' ? JSON.stringify(req.body, null, 2) : '[HIDDEN]',
       errors: errorMessages
     });
     
