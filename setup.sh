@@ -47,7 +47,6 @@ cat > .env << 'EOF'
 PORT=5000
 MONGO_URI=mongodb://localhost:27017/prodigy_employees
 JWT_SECRET=your-super-secret-jwt-key-change-in-production-2024
-DEFAULT_ADMIN_PASSWORD=admin123
 NODE_ENV=development
 EOF
 

@@ -14,7 +14,7 @@ const handleValidationErrors = (req, res, next) => {
     console.log('Validation middleware errors:', {
       url: req.url,
       method: req.method,
-      body: process.env.NODE_ENV === 'development' ? JSON.stringify(req.body, null, 2) : '[HIDDEN]',
+      body: JSON.stringify(req.body, null, 2),
       errors: errorMessages
     });
     
@@ -94,8 +94,8 @@ const validateEmployee = [
       if (value < 0) {
         throw new Error('Salary cannot be negative');
       }
-      if (value > 10000000) {
-        throw new Error('Salary cannot exceed 10,000,000');
+      if (value > 999999999) {
+        throw new Error('Salary cannot exceed 999,999,999');
       }
       return true;
     }),
@@ -107,6 +107,9 @@ const validateEmployee = [
     .custom((value) => {
       const date = new Date(value);
       const now = new Date();
+      // Set time to start of day for fair comparison
+      date.setHours(0, 0, 0, 0);
+      now.setHours(0, 0, 0, 0);
       if (date > now) {
         throw new Error('Join date cannot be in the future');
       }
@@ -163,8 +166,8 @@ const validateEmployeeUpdate = [
       if (value < 0) {
         throw new Error('Salary cannot be negative');
       }
-      if (value > 10000000) {
-        throw new Error('Salary cannot exceed 10,000,000');
+      if (value > 999999999) {
+        throw new Error('Salary cannot exceed 999,999,999');
       }
       return true;
     }),
@@ -177,6 +180,9 @@ const validateEmployeeUpdate = [
       if (value) {
         const date = new Date(value);
         const now = new Date();
+        // Set time to start of day for fair comparison
+        date.setHours(0, 0, 0, 0);
+        now.setHours(0, 0, 0, 0);
         if (date > now) {
           throw new Error('Join date cannot be in the future');
         }
