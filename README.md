@@ -1,14 +1,35 @@
-# 🏢 PRODIGY Employee Management System
+# 🏢 PRODIGY Employee Management System - Task 02
 
-**Professional Enterprise-Grade Employee Management with Modern UI/UX**
+**Modern Glassmorphism Design | Full-Stack MERN Application**
 
-A complete MERN Stack application featuring advanced CRUD operations, professional authentication, JWT security, comprehensive employee management, and premium Electrox Design System with government-grade UI aesthetics.
+A complete Employee Management System featuring advanced CRUD operations, JWT authentication, modern glassmorphism UI design, and comprehensive employee management capabilities built with the MERN stack.
 
-## ✨ Features
+## ✨ Live Demo & Repository
 
+- **GitHub Repository**: [https://github.com/MimansaPatle/PRODIGY_FS_TASKS02](https://github.com/MimansaPatle/PRODIGY_FS_TASKS02)
+- **Task**: PRODIGY InfoTech Full Stack Development Task 02
+
+## 🎨 Modern Design Features
+
+### **Glassmorphism UI Design**
+- **Modern Light Theme** - Soft indigo (#6366f1) color scheme with light background
+- **Glass Panels** - Frosted glass effect with backdrop blur on all components
+- **Abstract Background** - Soft gradient orbs with blur effects
+- **Rounded Corners** - Modern 1.5rem to 2rem radius throughout
+- **Professional Shadows** - Indigo-tinted soft shadows for depth
+- **Smooth Animations** - Professional hover effects and transitions
+
+### **Component Styling**
+- **Cards & Panels** - Glassmorphism with rgba(255, 255, 255, 0.7) transparency
+- **Buttons** - Bold design with indigo gradients and shadows
+- **Forms** - Modern input fields with focus states and validation
+- **Navigation** - Glass navbar with backdrop blur
+- **Badges** - Uppercase, bold styling with color coding
+- **Tables** - Clean design with hover effects
+
+## ✨ Core Features
 ### 🔐 **Security & Authentication**
 - **JWT Authentication** - Stateless token-based authentication with secure refresh tokens
-- **Password Security** - bcrypt hashing with 12 salt rounds and strength validation
 - **Role-Based Access Control** - Admin and HR roles with granular permissions
 - **Protected Routes** - Middleware validation for secure API endpoints
 - **Session Management** - Track and manage user sessions with auto-logout
@@ -39,7 +60,7 @@ A complete MERN Stack application featuring advanced CRUD operations, profession
 - **Clean Forms** - Intuitive form design with comprehensive validation feedback
 - **Smooth Animations** - Professional hover effects and micro-interactions
 
-## � Tech Stack
+## 🚀 Technology Stack
 
 ### Backend
 - **Node.js 18+** - JavaScript runtime environment
@@ -75,8 +96,8 @@ A complete MERN Stack application featuring advanced CRUD operations, profession
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/Tirthvaghela/PRODIGY-FS-TASK02.git
-cd PRODIGY-FS-TASK02
+git clone https://github.com/MimansaPatle/PRODIGY_FS_TASKS02.git
+cd PRODIGY_FS_TASKS02
 ```
 
 ### 2. Automated Setup
@@ -428,20 +449,19 @@ npm install
 - [ ] Docker containerization
 - [ ] CI/CD pipeline setup
 
-## 👨‍💻 Development Team
+## 👨‍💻 Developer
 
-**Built with ❤️ using modern web technologies**
+**Built by Mimansa Patle for PRODIGY InfoTech**
 
-- **Frontend**: React 18, Vite, Modern CSS
-- **Backend**: Node.js, Express, MongoDB
-- **Authentication**: JWT, bcrypt
-- **UI/UX**: Electrox Design System
-- **Development**: Professional coding standards
+- **Task**: Full Stack Development Task 02
+- **Repository**: [PRODIGY_FS_TASKS02](https://github.com/MimansaPatle/PRODIGY_FS_TASKS02)
+- **Design**: Modern Glassmorphism with Indigo Theme
+- **Technologies**: MERN Stack with Modern UI/UX
 
 ## 📄 License
 
-This project is part of the PRODIGY InfoTech internship program.
+This project is part of the PRODIGY InfoTech Full Stack Development internship program.
 
 ---
 
-**🎯 Ready for Production | 🔒 Enterprise Security | 🎨 Professional Design**
+**🎯 Production Ready | 🔒 Enterprise Security | 🎨 Modern Glassmorphism Design**
